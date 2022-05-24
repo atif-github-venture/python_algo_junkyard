@@ -17,9 +17,9 @@
 
 
 diction = {}
-nums = [3,4,-1,1,2] #2
+# nums = [3, 4, -1, 1]  # 2
 # nums = [1,2,0] #3
-# nums = [7,8,9,11,12] #1
+nums = [7,8,9,11,12] #1
 
 for x in nums:
     if x not in diction:
@@ -32,4 +32,11 @@ print(diction)
 while i in diction.keys():
     print(i)
     i += 1
-print(i)
+print ("missing:", i)
+
+# alternate solution
+i = 1
+while i in nums:
+    print(i)
+    i += 1
+print ("missing:", i)

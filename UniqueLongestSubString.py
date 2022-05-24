@@ -71,9 +71,10 @@ def is_present(index, str_to_find, list_a):
 #
 # print(last_index)
 
+# fill in the missing numbers
 x = [3, 4, -1, 1]
 
-k = list(x).sort()
-print(k)
-y = list(z for z in range(x[0], x[len(x)]))
+x.sort()
+print(x)
+y = list(z for z in range(x[0], x[len(x)-1]))
 print(y)
